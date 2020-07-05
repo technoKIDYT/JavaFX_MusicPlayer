@@ -25,15 +25,15 @@
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
                      <children>
                         <VBox layoutX="265.0" layoutY="221.0" prefHeight="200.0" prefWidth="100.0" />
-                        <ImageView fx:id="trackLogo" fitHeight="302.0" fitWidth="334.0" layoutX="301.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="trackLogo" fitHeight="302.0" fitWidth="334.0" layoutX="327.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
                            <effect>
                               <DropShadow height="77.34" radius="39.6525" width="83.27" />
                            </effect>
                            <image>
-                              <Image url="@../../../OneDrive/Desktop/download.jpg" />
+                              <Image url="@../../../../OneDrive/Desktop/download.jpg" />
                            </image>
                         </ImageView>
-                        <HBox alignment="CENTER" layoutX="256.0" layoutY="588.0" prefHeight="36.0" prefWidth="392.0" spacing="50.0">
+                        <HBox alignment="CENTER" layoutX="74.0" layoutY="588.0" prefHeight="36.0" prefWidth="805.0" spacing="50.0">
                            <children>
                               <ImageView fx:id="prev" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -52,7 +52,7 @@
                               </ImageView>
                            </children>
                         </HBox>
-                        <Label fx:id="songTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="128.0" layoutY="518.0" prefHeight="22.0" prefWidth="649.0" text="Song Title" textAlignment="CENTER">
+                        <Label fx:id="songTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="545.0" prefHeight="22.0" prefWidth="649.0" text="Song Title" textAlignment="CENTER">
                            <font>
                               <Font name="Berlin Sans FB" size="20.0" />
                            </font>
@@ -78,12 +78,102 @@
          <children>
             <AnchorPane fx:id="leftSidePanel" prefWidth="250.0" style="-fx-background-color: #222542;">
                <children>
-                  <Label fx:id="lblVersion" alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="648.0" prefHeight="18.0" prefWidth="130.0" text="Version 1.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="61.0" />
+                  <VBox alignment="CENTER" layoutX="26.0" layoutY="108.0" prefHeight="519.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="150.0" spacing="15.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../externalImages/home_page_100px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Home" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="150.0" spacing="15.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../externalImages/microphone_100px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Search" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="150.0" spacing="15.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../externalImages/radio_100px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Radio" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="150.0" spacing="15.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../externalImages/music_folder_100px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="My Music" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
                </children>
             </AnchorPane>
          </children>
       </JFXDrawer>
       <JFXHamburger fx:id="ham" layoutX="14.0" layoutY="64.0" prefHeight="36.0" prefWidth="60.0" />
-      <AnchorPane layoutY="-3.0" prefHeight="59.0" prefWidth="1202.0" style="-fx-background-color: #222542;" />
+      <AnchorPane layoutY="-3.0" prefHeight="60.0" prefWidth="1202.0" style="-fx-background-color: #222542;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="31.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../externalImages/sound_surround_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="98.0" layoutY="20.0" text="Audio Bytes" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="1002.0" layoutY="-4.0" prefHeight="68.0" prefWidth="200.0" spacing="25.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../externalImages/minimize_window_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../externalImages/maximize_window_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../externalImages/cancel_100px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children></AnchorPane>
    </children>
 </AnchorPane>
